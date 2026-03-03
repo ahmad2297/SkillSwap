@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillSwap - Register</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,29 +12,29 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="register.html">Register</a>
+            <a href="dashboard.html">Dashboard</a>
         </nav>
     </header>
     
     <main>
-        <h2>Join SkillSwap</h2>
+        <h2>Become a Mentor</h2>
+        <p>Fill out the form below to share your expertise with the community.</p>
+        
         <form id="registerForm">
             <div>
                 <label for="name">Full Name:</label>
-                <input type="text" id="name">
+                <input type="text" id="name" placeholder="Enter your name" required>
             </div>
-            <br>
             <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
             </div>
-            <br>
             <div>
-                <label for="skill">Skill to Offer:</label>
-                <input type="text" id="skill">
+                <label for="skill">Skill to Share:</label>
+                <input type="text" id="skill" placeholder="e.g., Photography, Java" required>
             </div>
-            <br>
-            <button type="submit">Register</button>
-            <p id="errorMsg" style="color: red;"></p>
+            <button type="submit">Register Now</button>
+            <p id="errorMsg" style="margin-top: 15px; font-weight: bold;"></p>
         </form>
     </main>
 
